@@ -1,4 +1,3 @@
-[index.html](https://github.com/user-attachments/files/24599943/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,8 +46,8 @@
                     <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
                     <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
                     <a href="#" class="icon-link cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="cart-count">3</span>
+                        <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                        <span class="cart-count">0</span>
                     </a>
                 </div>
 
@@ -129,7 +128,334 @@
                         <h3>Sports Shoes</h3>
                         <p>Performance & Comfort</p>
                         <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
-                    </div>[style.css](https://github.com/user-attachments/files/24599946/style.css)/* Reset & Base Styles */
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Formal Shoes">
+                    </div>
+                    <div class="category-content">
+                        <h3>Formal Shoes</h3>
+                        <p>Office & Business</p>
+                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Shoes">
+                    </div>
+                    <div class="category-content">
+                        <h3>Casual Shoes</h3>
+                        <p>Everyday Comfort</p>
+                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sneakers">
+                    </div>
+                    <div class="category-content">
+                        <h3>Sneakers</h3>
+                        <p>Street Style</p>
+                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Best sellers this week</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nike Air Max">
+                        <div class="product-badges">
+                            <span class="badge hot">HOT</span>
+                            <span class="badge discount">-30%</span>
+                        </div>
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Sports Shoes</span>
+                        <h3 class="product-title">Nike Air Max 270</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(45 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Ksh. 4,500</span>
+                            <span class="original-price">Ksh. 6,500</span>
+                        </div>
+                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Leather Formal">
+                        <div class="product-badges">
+                            <span class="badge new">NEW</span>
+                        </div>
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Formal Shoes</span>
+                        <h3 class="product-title">Premium Leather Oxford</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(32 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Ksh. 3,800</span>
+                        </div>
+                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Adidas Sneakers">
+                        <div class="product-badges">
+                            <span class="badge discount">-25%</span>
+                        </div>
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Sneakers</span>
+                        <h3 class="product-title">Adidas Ultra Boost</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(67 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Ksh. 5,200</span>
+                            <span class="original-price">Ksh. 7,000</span>
+                        </div>
+                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Loafers">
+                        <div class="product-badges">
+                            <span class="badge best">BEST</span>
+                        </div>
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Casual Shoes</span>
+                        <h3 class="product-title">Comfort Loafers</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Ksh. 2,500</span>
+                        </div>
+                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn btn-view-all">View All Products <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discount Banner -->
+    <section class="discount-banner" id="deals">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h2>MEGA DISCOUNT SALE</h2>
+                    <h3>UP TO <span>30% OFF</span> ON ALL SHOES</h3>
+                    <p>Limited time offer. Shop now before stock runs out!</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <small>Days</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <small>Hours</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <small>Minutes</small>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <small>Seconds</small>
+                        </div>
+                    </div>
+                    <a href="#products" class="btn btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i> BUY NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <p>What our customers say about us</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The quality of shoes is amazing! Got my Nike Air Max delivered in 2 days. Highly recommend Annex Kilishop!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="Images/G3.jpg" alt="Customer">
+                        <div>
+                            <h4>Glen Annex</h4>
+                            <span>South Africa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Best prices in town! Their customer service is excellent. Will definitely shop here again."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                        <div>
+                            <h4>Ruth Shallom</h4>
+                            <span>Canada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Authentic products and fast delivery. The 30% discount was real! Saved a lot on my purchase."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="Images/zeddy zadock.jpg" alt="Customer">
+                        <div>
+                            <h4>Zeddy Zaddock</h4>
+                            <span>United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <h2><i class="fas fa-shoe-prints"></i> ANNEX<span>Kilishop</span></h2>
+                    </div>
+                    <p>Your trusted online destination for premium footwear in Kenya. Quality, style, and comfort guaranteed.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Hot Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Exchange</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +254 723 396 147</li>
+                        <li><i class="fas fa-envelope"></i> info@annexkilishop.co.ke</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 8PM</li>
+                    </ul>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Annex Online Kilishop. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for shoe lovers in Kenya</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254723396147" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -345,14 +671,6 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
 }
-[myscript.js](https://github.com/user-attachments/files/24599959/myscript.js)const express = require('express');
-const app = express();
-
-app.use(express.static(__dirname));
-
-app.listen(8080, () => {
-    console.log('Server running on http://localhost:8080');
-});
 
 .hero-offer {
     display: flex;
@@ -835,327 +1153,29 @@ app.listen(8080, () => {
 }
 
 
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Formal Shoes">
-                    </div>
-                    <div class="category-content">
-                        <h3>Formal Shoes</h3>
-                        <p>Office & Business</p>
-                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Shoes">
-                    </div>
-                    <div class="category-content">
-                        <h3>Casual Shoes</h3>
-                        <p>Everyday Comfort</p>
-                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1531315630201-bb15abeb1653?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sneakers">
-                    </div>
-                    <div class="category-content">
-                        <h3>Sneakers</h3>
-                        <p>Street Style</p>
-                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+const express = require('express');
+const app = express();
 
-    <!-- Featured Products -->
-    <section class="products" id="products">
-        <div class="container">
-            <div class="section-header">
-                <h2>Featured Products</h2>
-                <p>Best sellers this week</p>
-            </div>
-            
-            <div class="products-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Nike Air Max">
-                        <div class="product-badges">
-                            <span class="badge hot">HOT</span>
-                            <span class="badge discount">-30%</span>
-                        </div>
-                        <button class="quick-view"><i class="fas fa-eye"></i></button>
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Sports Shoes</span>
-                        <h3 class="product-title">Nike Air Max 270</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(45 reviews)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">Ksh. 4,500</span>
-                            <span class="original-price">Ksh. 6,500</span>
-                        </div>
-                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Leather Formal">
-                        <div class="product-badges">
-                            <span class="badge new">NEW</span>
-                        </div>
-                        <button class="quick-view"><i class="fas fa-eye"></i></button>
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Formal Shoes</span>
-                        <h3 class="product-title">Premium Leather Oxford</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(32 reviews)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">Ksh. 3,800</span>
-                        </div>
-                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Adidas Sneakers">
-                        <div class="product-badges">
-                            <span class="badge discount">-25%</span>
-                        </div>
-                        <button class="quick-view"><i class="fas fa-eye"></i></button>
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Sneakers</span>
-                        <h3 class="product-title">Adidas Ultra Boost</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <span>(67 reviews)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">Ksh. 5,200</span>
-                            <span class="original-price">Ksh. 7,000</span>
-                        </div>
-                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                    </div>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Casual Loafers">
-                        <div class="product-badges">
-                            <span class="badge best">BEST</span>
-                        </div>
-                        <button class="quick-view"><i class="fas fa-eye"></i></button>
-                    </div>
-                    <div class="product-content">
-                        <span class="product-category">Casual Shoes</span>
-                        <h3 class="product-title">Comfort Loafers</h3>
-                        <div class="product-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>(89 reviews)</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="current-price">Ksh. 2,500</span>
-                        </div>
-                        <button class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center">
-                <a href="#" class="btn btn-view-all">View All Products <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+app.use(express.static(__dirname));
 
-    <!-- Discount Banner -->
-    <section class="discount-banner" id="deals">
-        <div class="container">
-            <div class="banner-content">
-                <div class="banner-text">
-                    <h2>MEGA DISCOUNT SALE</h2>
-                    <h3>UP TO <span>30% OFF</span> ON ALL SHOES</h3>
-                    <p>Limited time offer. Shop now before stock runs out!</p>
-                    <div class="countdown">
-                        <div class="countdown-item">
-                            <span id="days">00</span>
-                            <small>Days</small>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="hours">00</span>
-                            <small>Hours</small>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="minutes">00</span>
-                            <small>Minutes</small>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds">00</span>
-                            <small>Seconds</small>
-                        </div>
-                    </div>
-                    <a href="#products" class="btn btn-primary btn-large">
-                        <i class="fas fa-shopping-cart"></i> BUY NOW
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+app.listen(8080, () => {
+    console.log('Server running on http://localhost:8080');
+});
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Customer Reviews</h2>
-                <p>What our customers say about us</p>
-            </div>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"The quality of shoes is amazing! Got my Nike Air Max delivered in 2 days. Highly recommend Annex Kilishop!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
-                        <div>
-                            <h4>John Kamau</h4>
-                            <span>Nairobi</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Best prices in town! Their customer service is excellent. Will definitely shop here again."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
-                        <div>
-                            <h4>Sarah Wanjiku</h4>
-                            <span>Mombasa</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Authentic products and fast delivery. The 30% discount was real! Saved a lot on my purchase."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Customer">
-                        <div>
-                            <h4>David Ochieng</h4>
-                            <span>Kisumu</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+//Toggle cart dropdown
+document.getElementById("CartIcon").addEventListener("click", function(e){
+    const dropdown = document.getElementById("cart-dropdown");
+})
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo">
-                        <h2><i class="fas fa-shoe-prints"></i> ANNEX<span>Kilishop</span></h2>
-                    </div>
-                    <p>Your trusted online destination for premium footwear in Kenya. Quality, style, and comfort guaranteed.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#deals">Hot Deals</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Return & Exchange</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Info</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +254 723 396 147</li>
-                        <li><i class="fas fa-envelope"></i> info@annexkilishop.co.ke</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-                        <li><i class="fas fa-clock"></i> Mon-Sat: 8AM - 8PM</li>
-                    </ul>
-                    <div class="payment-methods">
-                        <i class="fab fa-cc-mastercard"></i>
-                        <i class="fab fa-cc-visa"></i>
-                        <i class="fab fa-cc-paypal"></i>
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Annex Online Kilishop. All Rights Reserved.</p>
-                <p>Designed with <i class="fas fa-heart"></i> for shoe lovers in Kenya</p>
-            </div>
-        </div>
-    </footer>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/254723396147" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="script.js"></script>
-</body>
-</html>
+{
+  "name": "shoe-shop",
+  "version": "1.0.0",
+  "main": "myscript.js",
+  "scripts": {
+    "start": "node myscript.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
